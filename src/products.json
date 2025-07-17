@@ -1,0 +1,37 @@
+{
+  "categories": [
+    {
+      "id": "electronics",
+      "name": "Elektronika",
+      "products": [
+        { "id": "el1", "name": "Smartfon X100", "price": 1999, "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80", "localImage": "/products/smartfon.jpg", "description": "Nowoczesny smartfon z dużym ekranem." },
+        { "id": "el2", "name": "Laptop Pro 15", "price": 4999, "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&q=80", "localImage": "/products/laptop.jpg", "description": "Wydajny laptop do pracy i rozrywki." },
+        { "id": "el3", "name": "Słuchawki Bass+", "price": 299, "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&q=80", "localImage": "/products/sluchawki.jpg", "description": "Bezprzewodowe słuchawki z mocnym basem." },
+        { "id": "el4", "name": "Smartwatch Fit", "price": 599, "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400&q=80", "localImage": "/products/smartwatch.jpg", "description": "Inteligentny zegarek z funkcjami fitness." },
+        { "id": "el5", "name": "Tablet 10.1", "price": 1299, "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&q=80", "localImage": "/products/tablet.jpg", "description": "Tablet z ekranem 10.1 cala i LTE." }
+      ]
+    },
+    {
+      "id": "fashion",
+      "name": "Moda",
+      "products": [
+        { "id": "fa1", "name": "T-shirt Classic", "price": 49, "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80", "localImage": "/products/tshirt.jpg", "description": "Bawełniany t-shirt w klasycznym kroju." },
+        { "id": "fa2", "name": "Jeansy Slim", "price": 129, "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80", "localImage": "/products/jeans.jpg", "description": "Modne jeansy o kroju slim." },
+        { "id": "fa3", "name": "Sneakersy White", "price": 199, "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&q=80", "localImage": "/products/sneakers.jpg", "description": "Białe sneakersy do codziennego użytku." },
+        { "id": "fa4", "name": "Kurtka Wind", "price": 249, "image": "https://images.unsplash.com/photo-1465101178521-c1a9136a3fd9?w=400&q=80", "localImage": "/products/kurtka.jpg", "description": "Lekka kurtka przeciwwiatrowa." },
+        { "id": "fa5", "name": "Czapka Beanie", "price": 39, "image": "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=400&q=80", "localImage": "/products/czapka.jpg", "description": "Ciepła czapka na zimę." }
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Dom i ogród",
+      "products": [
+        { "id": "ho1", "name": "Poduszka Soft", "price": 59, "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=400&q=80", "localImage": "/products/poduszka.jpg", "description": "Miękka poduszka do spania." },
+        { "id": "ho2", "name": "Koc Wełniany", "price": 99, "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=400&q=80", "localImage": "/products/koc.jpg", "description": "Ciepły koc z naturalnej wełny." },
+        { "id": "ho3", "name": "Zestaw Kubków", "price": 49, "image": "https://images.unsplash.com/photo-1519864600265-abb23847ef2c?w=400&q=80", "localImage": "/products/kubki.jpg", "description": "Zestaw 4 ceramicznych kubków." },
+        { "id": "ho4", "name": "Lampka LED", "price": 79, "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400&q=80", "localImage": "/products/lampka.jpg", "description": "Lampka nocna LED z regulacją jasności." },
+        { "id": "ho5", "name": "Doniczka Ceramiczna", "price": 29, "image": "https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=400&q=80", "localImage": "/products/doniczka.jpg", "description": "Ceramiczna doniczka na kwiaty." }
+      ]
+    }
+  ]
+} 
