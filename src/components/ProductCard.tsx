@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { pushDataLayer } from "./dataLayer";
+import { useCart } from "@/contexts/CartContext";
 
 export type Product = {
   id: string;
@@ -30,6 +31,8 @@ function getFirstValidImage(sources: (string | undefined)[]) {
 }
 
 export default function ProductCard({ product, category, onAddToCart }: ProductCardProps) {
+  const { addItem } = useCart();
+  
   // Fallback: Unsplash -> lokalny -> placeholder
   const imageSrc = getFirstValidImage([
     product.image,
@@ -38,6 +41,10 @@ export default function ProductCard({ product, category, onAddToCart }: ProductC
   ]);
 
   const handleAddToCart = () => {
+    // Dodaj produkt do koszyka
+    addItem(product, 1);
+    
+    // Wyślij event do dataLayer
     if (category) {
       pushDataLayer({
         event: "add_to_cart",
@@ -56,6 +63,8 @@ export default function ProductCard({ product, category, onAddToCart }: ProductC
         },
       });
     }
+    
+    // Wywołaj callback jeśli istnieje
     onAddToCart?.();
   };
 

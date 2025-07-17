@@ -4,7 +4,7 @@
       "id": "electronics",
       "name": "Elektronika",
       "products": [
-        { "id": "el1", "name": "Smartfon X100", "price": 1999, "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80", "localImage": "/products/smartfon.jpg", "description": "Nowoczesny smartfon z dużym ekranem." },
+        { "id": "el1", "name": "Smartfon X100", "price": 1599, "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=80", "localImage": "/products/smartfon.jpg", "description": "Nowoczesny smartfon z dużym ekranem." },
         { "id": "el2", "name": "Laptop Pro 15", "price": 4999, "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400&q=80", "localImage": "/products/laptop.jpg", "description": "Wydajny laptop do pracy i rozrywki." },
         { "id": "el3", "name": "Słuchawki Bass+", "price": 299, "image": "https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=400&q=80", "localImage": "/products/sluchawki.jpg", "description": "Bezprzewodowe słuchawki z mocnym basem." },
         { "id": "el4", "name": "Smartwatch Fit", "price": 599, "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400&q=80", "localImage": "/products/smartwatch.jpg", "description": "Inteligentny zegarek z funkcjami fitness." },

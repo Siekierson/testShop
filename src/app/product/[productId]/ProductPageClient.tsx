@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { pushDataLayer } from "@/components/dataLayer";
+import { useCart } from "@/contexts/CartContext";
 
 interface Product {
   id: string;
@@ -24,6 +25,8 @@ interface Props {
 }
 
 export default function ProductPageClient({ product, category }: Props) {
+  const { addItem } = useCart();
+  
   // Event view_item
   useEffect(() => {
     pushDataLayer({
@@ -44,6 +47,10 @@ export default function ProductPageClient({ product, category }: Props) {
   }, [product, category]);
 
   const handleAddToCart = () => {
+    // Dodaj produkt do koszyka
+    addItem(product, 1);
+    
+    // Wyślij event do dataLayer
     pushDataLayer({
       event: "add_to_cart",
       ecommerce: {
@@ -60,7 +67,6 @@ export default function ProductPageClient({ product, category }: Props) {
         ],
       },
     });
-    // Tu można dodać logikę do koszyka
   };
 
   return (
