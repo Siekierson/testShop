@@ -1,11 +1,21 @@
 "use client";
 import Carousel from "@/components/Carousel";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import productsData from "@/products.json";
 import Image from "next/image";
 import Link from "next/link";
 import { pushDataLayer } from "@/components/dataLayer";
 import { useCart } from "@/contexts/CartContext";
+
+type PromoProduct = {
+  id: string;
+  name: string;
+  price: number;
+  description: string;
+  image?: string;
+  localImage?: string;
+  category: { name: string };
+};
 
 function getPromoProducts() {
   // Wybierz 3 dowolne produkty (tu: po jednym z każdej kategorii)
@@ -32,7 +42,7 @@ function PromoSection() {
   const promoProducts = getPromoProducts();
   const { addItem } = useCart();
 
-  const handleSelect = (product, idx) => {
+  const handleSelect = (product: PromoProduct, idx: number) => {
     pushDataLayer({
       event: "select_item",
       ecommerce: {
@@ -51,8 +61,13 @@ function PromoSection() {
     });
   };
 
-  const handleAddToCart = (product, idx) => {
-    addItem(product, 1);
+  const handleAddToCart = (product: PromoProduct, idx: number) => {
+    // Zapewnij, że image zawsze jest stringiem
+    const safeProduct = {
+      ...product,
+      image: product.image || product.localImage || "",
+    };
+    addItem(safeProduct, 1);
     pushDataLayer({
       event: "add_to_cart",
       ecommerce: {
